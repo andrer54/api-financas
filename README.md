@@ -12,13 +12,13 @@ que estou construindo nas minhas horas vagas.
 baixe em uma pasta o projeto
 
 primeiro crie uma build para o projeto com o comando:
-        mvn clean install
+       # mvn clean install
 
 agora (é preciso ter docker-compose instalado)  
-        docker-compose up --build --force-recreate
+       # docker-compose up --build --force-recreate
 
 obs: se estiver utilizando linux adicione sudo no inicio, assim:  
-        sudo docker-compose up --build --force-recreate
+       # sudo docker-compose up --build --force-recreate
 
 ---
 ## Instruções de utilização:
@@ -33,20 +33,20 @@ GET    http://localhost:8080/usuario/3
 
 ### Cadastrar um novo usuário
 POST    http://localhost:8080/usuario/  
-{
+{  
     "nome": "nome_do_usuario",  
     "email": "email_do_usuario"  
 }  
 
 
-### Atualizar um usuário existente
-PUT    http://localhost:8080/usuario/3
-{
-    "nome": "novo_nome",  
-    "email": "novo_email"  
-}  
+> ### Atualizar um usuário existente
+> PUT    http://localhost:8080/usuario/3
+> {  
+>    "nome": "novo_nome",  
+>    "email": "novo_email"  
+> }  
 
 
-### Deletar um usuário existente
-DELETE    http://localhost:8080/usuario/2  
+> #### Deletar um usuário existente
+> DELETE    http://localhost:8080/usuario/2  
   
