@@ -1,10 +1,22 @@
 package com.andre.apifinancas.controller.dto;
 
+import com.andre.apifinancas.model.Usuario;
+
 public class UsuarioRs {
 
     private Long id;
     private String nome;
     private String email;
+
+    //converter Usuario em UsuarioRs
+    public static UsuarioRs converter(Usuario u){
+        var usuario = new UsuarioRs();
+        usuario.setId(u.getId());
+        usuario.setNome(u.getNome());
+        usuario.setEmail(u.getEmail());
+        return usuario;
+    }
+
 
     public Long getId() {
         return this.id;
