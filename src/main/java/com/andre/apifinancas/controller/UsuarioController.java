@@ -1,5 +1,6 @@
 package com.andre.apifinancas.controller;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -64,5 +65,18 @@ public class UsuarioController {
             throw new Exception("Usuário não encontrado");
         }
 
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteUsuario(@PathVariable("id") Long id) throws Exception{
+        var us = usuarioRepository.findById(id);
+
+        if(us.isPresent()){
+            var u = us.get();
+
+            usuarioRepository.delete(u);
+        } else {
+            throw new Exception("Usuário não encontrado");
+        }
     }
 }
