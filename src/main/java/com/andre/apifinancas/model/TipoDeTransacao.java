@@ -1,5 +1,5 @@
 package com.andre.apifinancas.model;
 
-public class TipoDeTransacao {
-    
+public enum TipoDeTransacao {
+    DESPESA, RECEITA, TRANSFERENCIA
 }
