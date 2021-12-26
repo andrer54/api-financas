@@ -3,7 +3,7 @@
  
 > API com CRUD completo,  
 > Tecnologias:  
-> JAVA, Spring, SpringJPA, MySQL, Docker  
+> JAVA, Spring, SpringJPA, MySQL, Docker , Docker-compose
 >
 > O Backend de um gerenciador financeiro simples.  
 > que estou construindo nas minhas horas vagas.  
@@ -13,8 +13,9 @@
 
 
 ---
+## Em CONSTRUÇÃO
 
-## Instruções de instalação
+### Instruções de instalação
 baixe em uma pasta o projeto
 
 #### primeiro crie uma build para o projeto com o comando:
